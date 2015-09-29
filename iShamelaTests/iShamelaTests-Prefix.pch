@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'iShamelaTests' target in the 'iShamelaTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

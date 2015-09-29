@@ -1,0 +1,26 @@
+//
+//  Category.h
+//  iShamela
+//
+//  Created by Suhendra Ahmad on 4/6/11.
+//  Copyright 2011 Aza Studios. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+
+@interface Category : NSObject {
+    long catord;
+    long catid;
+    long lvl;
+    NSString *name;
+}
+
+@property (nonatomic, assign) long catord;
+@property (nonatomic, assign) long catid;
+@property (nonatomic, assign) long lvl;
+@property (nonatomic, copy) NSString *name;
+
++ (Category *)categoryWithId:(long)_catid catOrd:(long)_catord level:(long)_lvl name:(NSString *)_name;
+
+@end

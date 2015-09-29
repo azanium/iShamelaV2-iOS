@@ -1,0 +1,48 @@
+//
+//  BookInfo.m
+//  iShamela
+//
+//  Created by Suhendra Ahmad on 4/7/11.
+//  Copyright 2011 Aza Studios. All rights reserved.
+//
+
+#import "BookInfo.h"
+#import "DbManager.h"
+#import "NSDictionary+Extensions.h"
+
+@implementation BookInfo
+
+@synthesize title, author, category, link;
+
++ (BookInfo *)bookWithTitle:(NSString *)_title category:(int)_category author:(NSString *)_author link:(NSString *)_link
+{
+    BookInfo *book = [[[BookInfo alloc] init] autorelease];
+    
+    book.title = _title;
+    book.author = _author;
+    book.category = _category;
+    book.link = _link;
+    
+    return book;
+}
+
++(BookInfo *)bookWithManifest:(NSString *)_filename
+{
+    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:_filename];
+    
+    if ([dic count] > 0)
+    {
+        NSString *title = [dic objectForKey:@"Title"];
+        NSString *author = [dic objectForKey:@"Author"];
+        int category = [dic intForKey:@"Category"];
+        NSString *link = [dic objectForKey:@"Link"];
+        
+        BookInfo *book = [BookInfo bookWithTitle:title category:category author:author link:link];
+        
+        return book;
+    }
+
+    return nil;
+}
+
+@end

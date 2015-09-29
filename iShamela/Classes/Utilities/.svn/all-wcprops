@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/Ishamela/shamela/!svn/ver/2/trunk/iShamela/iShamela/Classes/Utilities
+END
+ShUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/Ishamela/shamela/!svn/ver/2/trunk/iShamela/iShamela/Classes/Utilities/ShUtils.h
+END
+DbManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/Ishamela/shamela/!svn/ver/2/trunk/iShamela/iShamela/Classes/Utilities/DbManager.h
+END
+ShUtils.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/Ishamela/shamela/!svn/ver/2/trunk/iShamela/iShamela/Classes/Utilities/ShUtils.m
+END
+NSDictionary+Extensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/Ishamela/shamela/!svn/ver/2/trunk/iShamela/iShamela/Classes/Utilities/NSDictionary+Extensions.h
+END
+DbManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/Ishamela/shamela/!svn/ver/2/trunk/iShamela/iShamela/Classes/Utilities/DbManager.m
+END
+NSDictionary+Extensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/Ishamela/shamela/!svn/ver/2/trunk/iShamela/iShamela/Classes/Utilities/NSDictionary+Extensions.m
+END

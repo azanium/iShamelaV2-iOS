@@ -1,0 +1,131 @@
+//
+//  HomeViewController.m
+//  iShamela
+//
+//  Created by Suhendra Ahmad on 4/4/11.
+//  Copyright 2011 Aza Studios. All rights reserved.
+//
+
+#import "HomeViewController.h"
+#import "Category.h"
+#import "ShLibrary.h"
+
+@implementation HomeViewController
+
+@synthesize segmentedCategoryView, aTableView;
+
+- (IBAction)categorySelectionChanged:(id)sender
+{
+    [self.aTableView reloadData];
+}
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+    }
+    return self;
+}
+
+- (void)dealloc
+{    
+    [super dealloc];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    
+    // Release any cached data, images, etc that aren't in use.
+}
+
+#pragma mark - View lifecycle
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+}
+
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+    self.aTableView = nil;
+    self.segmentedCategoryView = nil;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma mark -
+#pragma mark Table View
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    if (self.segmentedCategoryView.selectedSegmentIndex == 0) {
+        return [[ShLibrary sharedLibrary].bookCategories count];        
+    }
+    else
+    {
+        return 1;
+    }
+
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    if (self.segmentedCategoryView.selectedSegmentIndex == 0) 
+    {
+        Category *cat = [[ShLibrary sharedLibrary].bookCategories objectAtIndex:section];
+        return cat.name;
+    }
+    else
+    {
+        return @"";
+    }
+}
+
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if (self.segmentedCategoryView.selectedSegmentIndex == 0)
+    {
+        return 0;
+    }
+    else
+    {
+        return [[ShLibrary sharedLibrary].bookList count];
+    }
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"iShamela.BookList";
+    
+	UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	
+	if (cell == nil) {
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];					
+	}
+    
+    if (self.segmentedCategoryView.selectedSegmentIndex == 0)
+    {
+        cell.textLabel.text = @"0";
+    }
+    else
+    {
+        BookInfo *bookInfo = [[ShLibrary sharedLibrary].bookList objectAtIndex:indexPath.row];
+        
+        cell.textLabel.text = bookInfo.title;
+    }
+    
+    return cell;
+}
+
+@end

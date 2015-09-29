@@ -1,0 +1,169 @@
+//
+//  DbManager.m
+//  iShamela
+//
+//  Created by Suhendra Ahmad on 4/4/11.
+//  Copyright 2011 Aza Studios. All rights reserved.
+//
+
+#import "DbManager.h"
+
+
+@implementation DbManager
+
+@synthesize books;
+
+#pragma mark -
+#pragma mark Static Methods
+
+static DbManager *_dbManager = nil;
+
++ (DbManager *)defaultManager
+{
+	if (_dbManager == nil) {
+		_dbManager = [[[DbManager alloc] init] autorelease];
+	}
+	
+	return _dbManager;
+}
+
++ (NSString *)getTempBookPath
+{    
+    NSString *temp = [NSTemporaryDirectory() stringByAppendingFormat:@"Books/"];
+
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    BOOL isDir = YES;
+    if ([fileManager fileExistsAtPath:temp isDirectory:&isDir] == NO)
+    {
+        NSError *error;
+    
+        if ([fileManager createDirectoryAtPath:temp
+                   withIntermediateDirectories:NO 
+                                    attributes:nil 
+                                         error:&error] == NO)
+        {
+            NSLog(@"DbManager: Failed to create Books tmp directory...");
+        };
+    }
+    return temp;
+}
+
++ (NSString *)getUserDocumentPathWithFileName:(NSString *)filename
+{
+    return [[DbManager getUserDocumentPath] stringByAppendingPathComponent:filename];
+}
+
+
++ (NSString *)getUserDocumentPath
+{
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	
+	NSString *documentPath = [paths objectAtIndex: 0];
+	
+	return documentPath;
+}
+
++ (NSString *)getManifestsPath
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+
+    NSString *libPath = [paths objectAtIndex:0];
+    NSString *manifestPath = [libPath stringByAppendingPathComponent:@"Manifests"];
+
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    BOOL isDir = YES;
+    if ([fileManager fileExistsAtPath:manifestPath isDirectory:&isDir] == NO)
+    {
+        NSError *error;
+        
+        if ([fileManager createDirectoryAtPath:manifestPath
+                   withIntermediateDirectories:NO 
+                                    attributes:nil 
+                                         error:&error] == NO)
+        {
+            NSLog(@"DbManager: Failed to create Manifests directory...");
+        };
+    }
+
+    
+    return manifestPath;
+}
+
+#pragma mark -
+#pragma mark File Management
+
++ (void)copyAttachedBook:(NSString *)filename
+{
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	NSString *dbPath = [DbManager getUserDocumentPathWithFileName:filename];
+	
+	BOOL success = [fileManager fileExistsAtPath:dbPath];
+	
+	NSError *error;
+	    
+	if (!success)
+	{
+		NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:filename];
+		success = [fileManager copyItemAtPath:defaultDBPath toPath:dbPath error:&error];
+		
+		if (!success)
+		{
+			NSAssert(0, @"copyBuiltInDBFiles: failed to copy builtin db");
+		}
+	}
+}
+
++ (NSArray *)fetchAllBooks
+{
+    NSError *error;
+    return [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[DbManager getUserDocumentPath]      
+                                                               error:&error];
+}
+
++ (NSArray *)fetchAllManifests
+{
+    NSError *error;
+    
+    return [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[DbManager getManifestsPath] error:&error];
+}
+
++ (void)duplicateAttachedBooks
+{
+    NSString *path = [[NSBundle mainBundle] resourcePath];
+    
+    NSString *targetPath = [DbManager getUserDocumentPath];
+    
+    NSError *error;
+    
+    // Find all files inside the main bundle
+    NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:path error:&error];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    for (NSString *file in files)
+    {
+        // Only process azx files, others ignore
+        NSString *ext = [file pathExtension];
+        if ([[ext lowercaseString] compare:@"azx"] == NSOrderedSame)
+        {            
+            // Only copy the attached books when the doesn't exist yet on the Documents folder
+            if ([fileManager fileExistsAtPath:[targetPath stringByAppendingPathComponent:file]] == NO)
+            {
+                NSLog(@"Copying attached book : %@", file);
+
+                [DbManager copyAttachedBook:file];
+            }
+            
+        }
+    }
+    
+}
+
+#pragma mark -
+#pragma mark Instance Methods
+
+
+
+@end

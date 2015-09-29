@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>catord</key>
+		<integer>0</integer>
+		<key>id</key>
+		<integer>124</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>العقيدة</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>1</integer>
+		<key>id</key>
+		<integer>183</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>العقيدة - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>2</integer>
+		<key>id</key>
+		<integer>127</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>التفاسير</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>3</integer>
+		<key>id</key>
+		<integer>70</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>التفاسير - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>4</integer>
+		<key>id</key>
+		<integer>128</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>علوم القرآن</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>5</integer>
+		<key>id</key>
+		<integer>189</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>علوم القرآن - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>6</integer>
+		<key>id</key>
+		<integer>125</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>متون الحديث</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>7</integer>
+		<key>id</key>
+		<integer>180</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>متون الحديث - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>8</integer>
+		<key>id</key>
+		<integer>112</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>الأجزاء الحديثية</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>9</integer>
+		<key>id</key>
+		<integer>179</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>الأجزاء الحديثية - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>10</integer>
+		<key>id</key>
+		<integer>5</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>مخطوطات حديثية</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>11</integer>
+		<key>id</key>
+		<integer>129</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>كتب ابن أبي الدنيا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>12</integer>
+		<key>id</key>
+		<integer>108</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>شروح الحديث</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>13</integer>
+		<key>id</key>
+		<integer>186</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>شروح الحديث - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>14</integer>
+		<key>id</key>
+		<integer>130</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>كتب التخريج والزوائد</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>15</integer>
+		<key>id</key>
+		<integer>67</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>كتب التخريج والزوائد - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>16</integer>
+		<key>id</key>
+		<integer>131</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>كتب الألباني</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>17</integer>
+		<key>id</key>
+		<integer>72</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>كتب الألباني - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>18</integer>
+		<key>id</key>
+		<integer>132</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>العلل والسؤالات</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>19</integer>
+		<key>id</key>
+		<integer>178</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>العلل والسؤالات - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>20</integer>
+		<key>id</key>
+		<integer>126</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>علوم الحديث</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>21</integer>
+		<key>id</key>
+		<integer>262</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>علوم الحديث - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>22</integer>
+		<key>id</key>
+		<integer>133</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>أصول الفقه والقواعد الفقهية</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>23</integer>
+		<key>id</key>
+		<integer>331</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>أصول الفقه والقواعد الفقهية - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>24</integer>
+		<key>id</key>
+		<integer>134</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>فقه حنفي</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>25</integer>
+		<key>id</key>
+		<integer>83</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>فقه حنفي - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>26</integer>
+		<key>id</key>
+		<integer>135</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>فقه مالكي</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>27</integer>
+		<key>id</key>
+		<integer>136</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>فقه شافعي</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>28</integer>
+		<key>id</key>
+		<integer>279</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>فقه شافعي - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>29</integer>
+		<key>id</key>
+		<integer>137</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>فقه حنبلي</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>30</integer>
+		<key>id</key>
+		<integer>280</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>فقه حنبلي - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>31</integer>
+		<key>id</key>
+		<integer>138</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>فقه عام</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>32</integer>
+		<key>id</key>
+		<integer>92</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>فقه عام - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>33</integer>
+		<key>id</key>
+		<integer>139</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>بحوث ومسائل</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>34</integer>
+		<key>id</key>
+		<integer>187</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>بحوث ومسائل - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>35</integer>
+		<key>id</key>
+		<integer>140</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>السياسة الشرعية والقضاء</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>36</integer>
+		<key>id</key>
+		<integer>76</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>السياسة الشرعية والقضاء - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>37</integer>
+		<key>id</key>
+		<integer>141</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>الفتاوى</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>38</integer>
+		<key>id</key>
+		<integer>378</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>الفتاوى - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>39</integer>
+		<key>id</key>
+		<integer>142</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>كتب ابن تيمية</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>40</integer>
+		<key>id</key>
+		<integer>143</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>كتب ابن القيم</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>41</integer>
+		<key>id</key>
+		<integer>113</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>الرقاق والآداب والأذكار</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>42</integer>
+		<key>id</key>
+		<integer>160</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>الرقاق والآداب والأذكار - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>43</integer>
+		<key>id</key>
+		<integer>144</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>السيرة والشمائل</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>44</integer>
+		<key>id</key>
+		<integer>327</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>السيرة والشمائل - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>45</integer>
+		<key>id</key>
+		<integer>122</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>التاريخ</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>46</integer>
+		<key>id</key>
+		<integer>194</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>التاريخ - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>47</integer>
+		<key>id</key>
+		<integer>146</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>التراجم والطبقات</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>48</integer>
+		<key>id</key>
+		<integer>184</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>التراجم والطبقات - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>49</integer>
+		<key>id</key>
+		<integer>147</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>الأنساب</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>50</integer>
+		<key>id</key>
+		<integer>191</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>الأنساب - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>51</integer>
+		<key>id</key>
+		<integer>115</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>البلدان والجغرافيا والرحلات</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>52</integer>
+		<key>id</key>
+		<integer>193</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>البلدان والجغرافيا والرحلات - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>53</integer>
+		<key>id</key>
+		<integer>149</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>كتب اللغة</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>54</integer>
+		<key>id</key>
+		<integer>248</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>كتب اللغة - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>55</integer>
+		<key>id</key>
+		<integer>150</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>الغريب والمعاجم ولغة الفقه</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>56</integer>
+		<key>id</key>
+		<integer>195</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>الغريب والمعاجم ولغة الفقه - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>57</integer>
+		<key>id</key>
+		<integer>151</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>النحو والصرف</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>58</integer>
+		<key>id</key>
+		<integer>192</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>النحو والصرف - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>59</integer>
+		<key>id</key>
+		<integer>114</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>الأدب والبلاغة</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>60</integer>
+		<key>id</key>
+		<integer>145</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>الأدب والبلاغة - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>61</integer>
+		<key>id</key>
+		<integer>153</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>الجوامع والمجلات ونحوها</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>62</integer>
+		<key>id</key>
+		<integer>6</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>الجوامع والمجلات ونحوها - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>63</integer>
+		<key>id</key>
+		<integer>154</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>فهارس الكتب والأدلة</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>64</integer>
+		<key>id</key>
+		<integer>371</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>فهارس الكتب والأدلة - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>65</integer>
+		<key>id</key>
+		<integer>155</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>محاضرات مفرغة</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>66</integer>
+		<key>id</key>
+		<integer>156</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>الدعوة وأحوال المسلمين</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>67</integer>
+		<key>id</key>
+		<integer>106</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>الدعوة وأحوال المسلمين - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>68</integer>
+		<key>id</key>
+		<integer>157</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>كتب إسلامية عامة</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>69</integer>
+		<key>id</key>
+		<integer>383</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>كتب إسلامية عامة - مرقم آليا</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>70</integer>
+		<key>id</key>
+		<integer>158</integer>
+		<key>lvl</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>علوم أخرى</string>
+	</dict>
+	<dict>
+		<key>catord</key>
+		<integer>71</integer>
+		<key>id</key>
+		<integer>185</integer>
+		<key>lvl</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>علوم أخرى - مرقم آليا</string>
+	</dict>
+</array>
+</plist>

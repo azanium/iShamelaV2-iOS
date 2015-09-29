@@ -1,0 +1,27 @@
+//
+//  BookInfo.h
+//  iShamela
+//
+//  Created by Suhendra Ahmad on 4/7/11.
+//  Copyright 2011 Aza Studios. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+
+@interface BookInfo : NSObject {
+    NSString *author;
+    int category;
+    NSString *link;
+    NSString *title;
+}
+
+@property (nonatomic, copy) NSString *author;
+@property (nonatomic, assign) int category;
+@property (nonatomic, copy) NSString *link;
+@property (nonatomic, copy) NSString *title;
+
++(BookInfo *)bookWithTitle:(NSString *)_title category:(int)_category author:(NSString *)_author link:(NSString *)_link;
++(BookInfo *)bookWithManifest:(NSString *)_filename;
+
+@end

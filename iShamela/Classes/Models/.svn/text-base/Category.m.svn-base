@@ -1,0 +1,28 @@
+//
+//  Category.m
+//  iShamela
+//
+//  Created by Suhendra Ahmad on 4/6/11.
+//  Copyright 2011 Aza Studios. All rights reserved.
+//
+
+#import "Category.h"
+
+
+@implementation Category
+
+@synthesize catid, catord, lvl, name;
+
++ (Category *)categoryWithId:(long)_catid catOrd:(long)_catord level:(long)_lvl name:(NSString *)_name
+{
+    Category *category = [[[Category alloc] init] autorelease];
+    
+    category.lvl = _lvl;
+    category.catord = _catord;
+    category.catid = _catid;
+    category.name = _name;
+    
+    return category;
+}
+
+@end

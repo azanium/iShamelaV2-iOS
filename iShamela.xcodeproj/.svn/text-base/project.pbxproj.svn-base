@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C115A3C01349782600CAC129 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C115A3BF1349782600CAC129 /* UIKit.framework */; };
+		C115A3C21349782600CAC129 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C115A3C11349782600CAC129 /* Foundation.framework */; };
+		C115A3C41349782600CAC129 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C115A3C31349782600CAC129 /* CoreGraphics.framework */; };
+		C115A3E61349782600CAC129 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C115A3BF1349782600CAC129 /* UIKit.framework */; };
+		C115A3E71349782600CAC129 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C115A3C11349782600CAC129 /* Foundation.framework */; };
+		C115A3E81349782600CAC129 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C115A3C31349782600CAC129 /* CoreGraphics.framework */; };
+		C115A3F01349782700CAC129 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C115A3EE1349782700CAC129 /* InfoPlist.strings */; };
+		C115A3F31349782700CAC129 /* iShamelaTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C115A3F21349782700CAC129 /* iShamelaTests.h */; };
+		C115A3F51349782700CAC129 /* iShamelaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C115A3F41349782700CAC129 /* iShamelaTests.m */; };
+		C115A4681349857300CAC129 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C115A4671349857300CAC129 /* libz.1.2.3.dylib */; };
+		C1E2DEAF134DE75700396C02 /* 5555.azx in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DE94134DE75700396C02 /* 5555.azx */; };
+		C1E2DEB0134DE75700396C02 /* 5556.azx in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DE95134DE75700396C02 /* 5556.azx */; };
+		C1E2DEB1134DE75700396C02 /* 9999.azx in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DE96134DE75700396C02 /* 9999.azx */; };
+		C1E2DEB5134DE75700396C02 /* Icon-book off.png in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DE9B134DE75700396C02 /* Icon-book off.png */; };
+		C1E2DEB6134DE75700396C02 /* Icon-bookmark off.png in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DE9C134DE75700396C02 /* Icon-bookmark off.png */; };
+		C1E2DEB7134DE75700396C02 /* Icon-donwload off.png in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DE9D134DE75700396C02 /* Icon-donwload off.png */; };
+		C1E2DEB8134DE75700396C02 /* Icon-gear off.png in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DE9E134DE75700396C02 /* Icon-gear off.png */; };
+		C1E2DEB9134DE75700396C02 /* Icon-inbox off.png in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DE9F134DE75700396C02 /* Icon-inbox off.png */; };
+		C1E2DEBA134DE75700396C02 /* Icon-search off.png in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DEA0134DE75700396C02 /* Icon-search off.png */; };
+		C1E2DEBB134DE75700396C02 /* Icon-suitcase off.png in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DEA1134DE75700396C02 /* Icon-suitcase off.png */; };
+		C1E2DEBC134DE75700396C02 /* Icon-sync off.png in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DEA2134DE75700396C02 /* Icon-sync off.png */; };
+		C1E2DEBD134DE75700396C02 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DEA4134DE75700396C02 /* MainWindow-iPad.xib */; };
+		C1E2DEBE134DE75700396C02 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DEA7134DE75700396C02 /* HomeView.xib */; };
+		C1E2DEBF134DE75700396C02 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DEA9134DE75700396C02 /* InfoPlist.strings */; };
+		C1E2DEC0134DE75700396C02 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DEAB134DE75700396C02 /* MainWindow.xib */; };
+		C1E2DEC1134DE75700396C02 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DEAD134DE75700396C02 /* SearchViewController.xib */; };
+		C1E2DEC2134DE75700396C02 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DEAE134DE75700396C02 /* SettingsViewController.xib */; };
+		C1E2DEEE134DE7FD00396C02 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DEC6134DE7FD00396C02 /* LICENSE */; };
+		C1E2DEEF134DE7FD00396C02 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C1E2DEC9134DE7FD00396C02 /* ioapi.c */; };
+		C1E2DEF0134DE7FD00396C02 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = C1E2DECB134DE7FD00396C02 /* mztools.c */; };
+		C1E2DEF1134DE7FD00396C02 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = C1E2DECD134DE7FD00396C02 /* unzip.c */; };
+		C1E2DEF2134DE7FD00396C02 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = C1E2DECF134DE7FD00396C02 /* zip.c */; };
+		C1E2DEF3134DE7FD00396C02 /* Readme.markdown in Resources */ = {isa = PBXBuildFile; fileRef = C1E2DED1134DE7FD00396C02 /* Readme.markdown */; };
+		C1E2DEF4134DE7FD00396C02 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E2DED3134DE7FD00396C02 /* SSZipArchive.m */; };
+		C1E2DEF5134DE7FD00396C02 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E2DED6134DE7FD00396C02 /* HomeViewController.m */; };
+		C1E2DEF6134DE7FD00396C02 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E2DED8134DE7FD00396C02 /* SearchViewController.m */; };
+		C1E2DEF7134DE7FD00396C02 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E2DEDA134DE7FD00396C02 /* SettingsViewController.m */; };
+		C1E2DEF9134DE7FD00396C02 /* iShamelaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E2DEDE134DE7FD00396C02 /* iShamelaAppDelegate.m */; };
+		C1E2DEFB134DE7FD00396C02 /* BookInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E2DEE2134DE7FD00396C02 /* BookInfo.m */; };
+		C1E2DEFC134DE7FD00396C02 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E2DEE4134DE7FD00396C02 /* Category.m */; };
+		C1E2DEFD134DE7FD00396C02 /* ShLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E2DEE6134DE7FD00396C02 /* ShLibrary.m */; };
+		C1E2DEFE134DE7FD00396C02 /* DbManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E2DEE9134DE7FD00396C02 /* DbManager.m */; };
+		C1E2DEFF134DE7FD00396C02 /* NSDictionary+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E2DEEB134DE7FD00396C02 /* NSDictionary+Extensions.m */; };
+		C1E2DF00134DE7FD00396C02 /* ShUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E2DEED134DE7FD00396C02 /* ShUtils.m */; };
+		C1E2DF07134DE84800396C02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E2DF04134DE84800396C02 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C115A3E91349782600CAC129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C115A3B21349782500CAC129 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C115A3BA1349782600CAC129;
+			remoteInfo = iShamela;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C115A3BB1349782600CAC129 /* iShamela.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iShamela.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C115A3BF1349782600CAC129 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C115A3C11349782600CAC129 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C115A3C31349782600CAC129 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C115A3E51349782600CAC129 /* iShamelaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iShamelaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C115A3ED1349782700CAC129 /* iShamelaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iShamelaTests-Info.plist"; sourceTree = "<group>"; };
+		C115A3EF1349782700CAC129 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C115A3F11349782700CAC129 /* iShamelaTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iShamelaTests-Prefix.pch"; sourceTree = "<group>"; };
+		C115A3F21349782700CAC129 /* iShamelaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iShamelaTests.h; sourceTree = "<group>"; };
+		C115A3F41349782700CAC129 /* iShamelaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iShamelaTests.m; sourceTree = "<group>"; };
+		C115A4671349857300CAC129 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		C1E2DE94134DE75700396C02 /* 5555.azx */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5555.azx; sourceTree = "<group>"; };
+		C1E2DE95134DE75700396C02 /* 5556.azx */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5556.azx; sourceTree = "<group>"; };
+		C1E2DE96134DE75700396C02 /* 9999.azx */ = {isa = PBXFileReference; lastKnownFileType = file; path = 9999.azx; sourceTree = "<group>"; };
+		C1E2DE9B134DE75700396C02 /* Icon-book off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-book off.png"; sourceTree = "<group>"; };
+		C1E2DE9C134DE75700396C02 /* Icon-bookmark off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-bookmark off.png"; sourceTree = "<group>"; };
+		C1E2DE9D134DE75700396C02 /* Icon-donwload off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-donwload off.png"; sourceTree = "<group>"; };
+		C1E2DE9E134DE75700396C02 /* Icon-gear off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-gear off.png"; sourceTree = "<group>"; };
+		C1E2DE9F134DE75700396C02 /* Icon-inbox off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-inbox off.png"; sourceTree = "<group>"; };
+		C1E2DEA0134DE75700396C02 /* Icon-search off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-search off.png"; sourceTree = "<group>"; };
+		C1E2DEA1134DE75700396C02 /* Icon-suitcase off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-suitcase off.png"; sourceTree = "<group>"; };
+		C1E2DEA2134DE75700396C02 /* Icon-sync off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-sync off.png"; sourceTree = "<group>"; };
+		C1E2DEA5134DE75700396C02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		C1E2DEA8134DE75700396C02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HomeView.xib; sourceTree = "<group>"; };
+		C1E2DEAA134DE75700396C02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C1E2DEAC134DE75700396C02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		C1E2DEAD134DE75700396C02 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		C1E2DEAE134DE75700396C02 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		C1E2DEC6134DE7FD00396C02 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C1E2DEC8134DE7FD00396C02 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		C1E2DEC9134DE7FD00396C02 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		C1E2DECA134DE7FD00396C02 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		C1E2DECB134DE7FD00396C02 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		C1E2DECC134DE7FD00396C02 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		C1E2DECD134DE7FD00396C02 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		C1E2DECE134DE7FD00396C02 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		C1E2DECF134DE7FD00396C02 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		C1E2DED0134DE7FD00396C02 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		C1E2DED1134DE7FD00396C02 /* Readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.markdown; sourceTree = "<group>"; };
+		C1E2DED2134DE7FD00396C02 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		C1E2DED3134DE7FD00396C02 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		C1E2DED5134DE7FD00396C02 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C1E2DED6134DE7FD00396C02 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C1E2DED7134DE7FD00396C02 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		C1E2DED8134DE7FD00396C02 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		C1E2DED9134DE7FD00396C02 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		C1E2DEDA134DE7FD00396C02 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		C1E2DEDD134DE7FD00396C02 /* iShamelaAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iShamelaAppDelegate.h; sourceTree = "<group>"; };
+		C1E2DEDE134DE7FD00396C02 /* iShamelaAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iShamelaAppDelegate.m; sourceTree = "<group>"; };
+		C1E2DEE1134DE7FD00396C02 /* BookInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookInfo.h; sourceTree = "<group>"; };
+		C1E2DEE2134DE7FD00396C02 /* BookInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookInfo.m; sourceTree = "<group>"; };
+		C1E2DEE3134DE7FD00396C02 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		C1E2DEE4134DE7FD00396C02 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		C1E2DEE5134DE7FD00396C02 /* ShLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShLibrary.h; sourceTree = "<group>"; };
+		C1E2DEE6134DE7FD00396C02 /* ShLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShLibrary.m; sourceTree = "<group>"; };
+		C1E2DEE8134DE7FD00396C02 /* DbManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbManager.h; sourceTree = "<group>"; };
+		C1E2DEE9134DE7FD00396C02 /* DbManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbManager.m; sourceTree = "<group>"; };
+		C1E2DEEA134DE7FD00396C02 /* NSDictionary+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extensions.h"; sourceTree = "<group>"; };
+		C1E2DEEB134DE7FD00396C02 /* NSDictionary+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extensions.m"; sourceTree = "<group>"; };
+		C1E2DEEC134DE7FD00396C02 /* ShUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShUtils.h; sourceTree = "<group>"; };
+		C1E2DEED134DE7FD00396C02 /* ShUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShUtils.m; sourceTree = "<group>"; };
+		C1E2DF02134DE84700396C02 /* iShamela-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iShamela-Prefix.pch"; sourceTree = "<group>"; };
+		C1E2DF04134DE84800396C02 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1E2DF14134DE99800396C02 /* iShamela-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iShamela-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C115A3B81349782600CAC129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C115A4681349857300CAC129 /* libz.1.2.3.dylib in Frameworks */,
+				C115A3C01349782600CAC129 /* UIKit.framework in Frameworks */,
+				C115A3C21349782600CAC129 /* Foundation.framework in Frameworks */,
+				C115A3C41349782600CAC129 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C115A3E11349782600CAC129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C115A3E61349782600CAC129 /* UIKit.framework in Frameworks */,
+				C115A3E71349782600CAC129 /* Foundation.framework in Frameworks */,
+				C115A3E81349782600CAC129 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C115A3B01349782500CAC129 = {
+			isa = PBXGroup;
+			children = (
+				C115A3C51349782600CAC129 /* iShamela */,
+				C115A3EB1349782600CAC129 /* iShamelaTests */,
+				C115A3BE1349782600CAC129 /* Frameworks */,
+				C115A3BC1349782600CAC129 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C115A3BC1349782600CAC129 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C115A3BB1349782600CAC129 /* iShamela.app */,
+				C115A3E51349782600CAC129 /* iShamelaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C115A3BE1349782600CAC129 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C115A4671349857300CAC129 /* libz.1.2.3.dylib */,
+				C115A3BF1349782600CAC129 /* UIKit.framework */,
+				C115A3C11349782600CAC129 /* Foundation.framework */,
+				C115A3C31349782600CAC129 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C115A3C51349782600CAC129 /* iShamela */ = {
+			isa = PBXGroup;
+			children = (
+				C1E2DEC3134DE7FD00396C02 /* Classes */,
+				C1E2DE92134DE75700396C02 /* Resources */,
+				C1E2DF09134DE89500396C02 /* Supporting Files */,
+			);
+			path = iShamela;
+			sourceTree = "<group>";
+		};
+		C115A3EB1349782600CAC129 /* iShamelaTests */ = {
+			isa = PBXGroup;
+			children = (
+				C115A3F21349782700CAC129 /* iShamelaTests.h */,
+				C115A3F41349782700CAC129 /* iShamelaTests.m */,
+				C115A3EC1349782700CAC129 /* Supporting Files */,
+			);
+			path = iShamelaTests;
+			sourceTree = "<group>";
+		};
+		C115A3EC1349782700CAC129 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C115A3ED1349782700CAC129 /* iShamelaTests-Info.plist */,
+				C115A3EE1349782700CAC129 /* InfoPlist.strings */,
+				C115A3F11349782700CAC129 /* iShamelaTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1E2DE92134DE75700396C02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1E2DE93134DE75700396C02 /* Books */,
+				C1E2DE9A134DE75700396C02 /* Images */,
+				C1E2DEA3134DE75700396C02 /* iPad */,
+				C1E2DEA6134DE75700396C02 /* iPhone */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C1E2DE93134DE75700396C02 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				C1E2DE94134DE75700396C02 /* 5555.azx */,
+				C1E2DE95134DE75700396C02 /* 5556.azx */,
+				C1E2DE96134DE75700396C02 /* 9999.azx */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		C1E2DE9A134DE75700396C02 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C1E2DE9B134DE75700396C02 /* Icon-book off.png */,
+				C1E2DE9C134DE75700396C02 /* Icon-bookmark off.png */,
+				C1E2DE9D134DE75700396C02 /* Icon-donwload off.png */,
+				C1E2DE9E134DE75700396C02 /* Icon-gear off.png */,
+				C1E2DE9F134DE75700396C02 /* Icon-inbox off.png */,
+				C1E2DEA0134DE75700396C02 /* Icon-search off.png */,
+				C1E2DEA1134DE75700396C02 /* Icon-suitcase off.png */,
+				C1E2DEA2134DE75700396C02 /* Icon-sync off.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		C1E2DEA3134DE75700396C02 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				C1E2DEA4134DE75700396C02 /* MainWindow-iPad.xib */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		C1E2DEA6134DE75700396C02 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				C1E2DEA9134DE75700396C02 /* InfoPlist.strings */,
+				C1E2DEA7134DE75700396C02 /* HomeView.xib */,
+				C1E2DEAB134DE75700396C02 /* MainWindow.xib */,
+				C1E2DEAD134DE75700396C02 /* SearchViewController.xib */,
+				C1E2DEAE134DE75700396C02 /* SettingsViewController.xib */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		C1E2DEC3134DE7FD00396C02 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C1E2DEC4134DE7FD00396C02 /* 3rd Parties */,
+				C1E2DED4134DE7FD00396C02 /* Controllers */,
+				C1E2DEE0134DE7FD00396C02 /* Models */,
+				C1E2DEE7134DE7FD00396C02 /* Utilities */,
+				C1E2DEDD134DE7FD00396C02 /* iShamelaAppDelegate.h */,
+				C1E2DEDE134DE7FD00396C02 /* iShamelaAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C1E2DEC4134DE7FD00396C02 /* 3rd Parties */ = {
+			isa = PBXGroup;
+			children = (
+				C1E2DEC5134DE7FD00396C02 /* ZipArchive */,
+			);
+			path = "3rd Parties";
+			sourceTree = "<group>";
+		};
+		C1E2DEC5134DE7FD00396C02 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				C1E2DEC6134DE7FD00396C02 /* LICENSE */,
+				C1E2DEC7134DE7FD00396C02 /* minizip */,
+				C1E2DED1134DE7FD00396C02 /* Readme.markdown */,
+				C1E2DED2134DE7FD00396C02 /* SSZipArchive.h */,
+				C1E2DED3134DE7FD00396C02 /* SSZipArchive.m */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		C1E2DEC7134DE7FD00396C02 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				C1E2DEC8134DE7FD00396C02 /* crypt.h */,
+				C1E2DEC9134DE7FD00396C02 /* ioapi.c */,
+				C1E2DECA134DE7FD00396C02 /* ioapi.h */,
+				C1E2DECB134DE7FD00396C02 /* mztools.c */,
+				C1E2DECC134DE7FD00396C02 /* mztools.h */,
+				C1E2DECD134DE7FD00396C02 /* unzip.c */,
+				C1E2DECE134DE7FD00396C02 /* unzip.h */,
+				C1E2DECF134DE7FD00396C02 /* zip.c */,
+				C1E2DED0134DE7FD00396C02 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		C1E2DED4134DE7FD00396C02 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1E2DED5134DE7FD00396C02 /* HomeViewController.h */,
+				C1E2DED6134DE7FD00396C02 /* HomeViewController.m */,
+				C1E2DED7134DE7FD00396C02 /* SearchViewController.h */,
+				C1E2DED8134DE7FD00396C02 /* SearchViewController.m */,
+				C1E2DED9134DE7FD00396C02 /* SettingsViewController.h */,
+				C1E2DEDA134DE7FD00396C02 /* SettingsViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C1E2DEE0134DE7FD00396C02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1E2DEE1134DE7FD00396C02 /* BookInfo.h */,
+				C1E2DEE2134DE7FD00396C02 /* BookInfo.m */,
+				C1E2DEE3134DE7FD00396C02 /* Category.h */,
+				C1E2DEE4134DE7FD00396C02 /* Category.m */,
+				C1E2DEE5134DE7FD00396C02 /* ShLibrary.h */,
+				C1E2DEE6134DE7FD00396C02 /* ShLibrary.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C1E2DEE7134DE7FD00396C02 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C1E2DEE8134DE7FD00396C02 /* DbManager.h */,
+				C1E2DEE9134DE7FD00396C02 /* DbManager.m */,
+				C1E2DEEA134DE7FD00396C02 /* NSDictionary+Extensions.h */,
+				C1E2DEEB134DE7FD00396C02 /* NSDictionary+Extensions.m */,
+				C1E2DEEC134DE7FD00396C02 /* ShUtils.h */,
+				C1E2DEED134DE7FD00396C02 /* ShUtils.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C1E2DF09134DE89500396C02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1E2DF14134DE99800396C02 /* iShamela-Info.plist */,
+				C1E2DF02134DE84700396C02 /* iShamela-Prefix.pch */,
+				C1E2DF04134DE84800396C02 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C115A3BA1349782600CAC129 /* iShamela */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C115A3F81349782700CAC129 /* Build configuration list for PBXNativeTarget "iShamela" */;
+			buildPhases = (
+				C115A3B71349782600CAC129 /* Sources */,
+				C115A3B81349782600CAC129 /* Frameworks */,
+				C115A3B91349782600CAC129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iShamela;
+			productName = iShamela;
+			productReference = C115A3BB1349782600CAC129 /* iShamela.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C115A3E41349782600CAC129 /* iShamelaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C115A3FB1349782700CAC129 /* Build configuration list for PBXNativeTarget "iShamelaTests" */;
+			buildPhases = (
+				C115A3E01349782600CAC129 /* Sources */,
+				C115A3E11349782600CAC129 /* Frameworks */,
+				C115A3E21349782600CAC129 /* Resources */,
+				C115A3E31349782600CAC129 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C115A3EA1349782600CAC129 /* PBXTargetDependency */,
+			);
+			name = iShamelaTests;
+			productName = iShamelaTests;
+			productReference = C115A3E51349782600CAC129 /* iShamelaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C115A3B21349782500CAC129 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Aza Studios";
+			};
+			buildConfigurationList = C115A3B51349782500CAC129 /* Build configuration list for PBXProject "iShamela" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C115A3B01349782500CAC129;
+			productRefGroup = C115A3BC1349782600CAC129 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C115A3BA1349782600CAC129 /* iShamela */,
+				C115A3E41349782600CAC129 /* iShamelaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C115A3B91349782600CAC129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E2DEAF134DE75700396C02 /* 5555.azx in Resources */,
+				C1E2DEB0134DE75700396C02 /* 5556.azx in Resources */,
+				C1E2DEB1134DE75700396C02 /* 9999.azx in Resources */,
+				C1E2DEB5134DE75700396C02 /* Icon-book off.png in Resources */,
+				C1E2DEB6134DE75700396C02 /* Icon-bookmark off.png in Resources */,
+				C1E2DEB7134DE75700396C02 /* Icon-donwload off.png in Resources */,
+				C1E2DEB8134DE75700396C02 /* Icon-gear off.png in Resources */,
+				C1E2DEB9134DE75700396C02 /* Icon-inbox off.png in Resources */,
+				C1E2DEBA134DE75700396C02 /* Icon-search off.png in Resources */,
+				C1E2DEBB134DE75700396C02 /* Icon-suitcase off.png in Resources */,
+				C1E2DEBC134DE75700396C02 /* Icon-sync off.png in Resources */,
+				C1E2DEBD134DE75700396C02 /* MainWindow-iPad.xib in Resources */,
+				C1E2DEBE134DE75700396C02 /* HomeView.xib in Resources */,
+				C1E2DEBF134DE75700396C02 /* InfoPlist.strings in Resources */,
+				C1E2DEC0134DE75700396C02 /* MainWindow.xib in Resources */,
+				C1E2DEC1134DE75700396C02 /* SearchViewController.xib in Resources */,
+				C1E2DEC2134DE75700396C02 /* SettingsViewController.xib in Resources */,
+				C1E2DEEE134DE7FD00396C02 /* LICENSE in Resources */,
+				C1E2DEF3134DE7FD00396C02 /* Readme.markdown in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C115A3E21349782600CAC129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C115A3F01349782700CAC129 /* InfoPlist.strings in Resources */,
+				C115A3F31349782700CAC129 /* iShamelaTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C115A3E31349782600CAC129 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C115A3B71349782600CAC129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E2DEEF134DE7FD00396C02 /* ioapi.c in Sources */,
+				C1E2DEF0134DE7FD00396C02 /* mztools.c in Sources */,
+				C1E2DEF1134DE7FD00396C02 /* unzip.c in Sources */,
+				C1E2DEF2134DE7FD00396C02 /* zip.c in Sources */,
+				C1E2DEF4134DE7FD00396C02 /* SSZipArchive.m in Sources */,
+				C1E2DEF5134DE7FD00396C02 /* HomeViewController.m in Sources */,
+				C1E2DEF6134DE7FD00396C02 /* SearchViewController.m in Sources */,
+				C1E2DEF7134DE7FD00396C02 /* SettingsViewController.m in Sources */,
+				C1E2DEF9134DE7FD00396C02 /* iShamelaAppDelegate.m in Sources */,
+				C1E2DEFB134DE7FD00396C02 /* BookInfo.m in Sources */,
+				C1E2DEFC134DE7FD00396C02 /* Category.m in Sources */,
+				C1E2DEFD134DE7FD00396C02 /* ShLibrary.m in Sources */,
+				C1E2DEFE134DE7FD00396C02 /* DbManager.m in Sources */,
+				C1E2DEFF134DE7FD00396C02 /* NSDictionary+Extensions.m in Sources */,
+				C1E2DF00134DE7FD00396C02 /* ShUtils.m in Sources */,
+				C1E2DF07134DE84800396C02 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C115A3E01349782600CAC129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C115A3F51349782700CAC129 /* iShamelaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C115A3EA1349782600CAC129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C115A3BA1349782600CAC129 /* iShamela */;
+			targetProxy = C115A3E91349782600CAC129 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C115A3EE1349782700CAC129 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C115A3EF1349782700CAC129 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C1E2DEA4134DE75700396C02 /* MainWindow-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1E2DEA5134DE75700396C02 /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
+		C1E2DEA7134DE75700396C02 /* HomeView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1E2DEA8134DE75700396C02 /* en */,
+			);
+			name = HomeView.xib;
+			sourceTree = "<group>";
+		};
+		C1E2DEA9134DE75700396C02 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1E2DEAA134DE75700396C02 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C1E2DEAB134DE75700396C02 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1E2DEAC134DE75700396C02 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C115A3F61349782700CAC129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C115A3F71349782700CAC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C115A3F91349782700CAC129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iShamela/iShamela-Prefix.pch";
+				INFOPLIST_FILE = "iShamela/iShamela-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C115A3FA1349782700CAC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iShamela/iShamela-Prefix.pch";
+				INFOPLIST_FILE = "iShamela/iShamela-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C115A3FC1349782700CAC129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iShamela.app/iShamela";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iShamelaTests/iShamelaTests-Prefix.pch";
+				INFOPLIST_FILE = "iShamelaTests/iShamelaTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C115A3FD1349782700CAC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iShamela.app/iShamela";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iShamelaTests/iShamelaTests-Prefix.pch";
+				INFOPLIST_FILE = "iShamelaTests/iShamelaTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C115A3B51349782500CAC129 /* Build configuration list for PBXProject "iShamela" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C115A3F61349782700CAC129 /* Debug */,
+				C115A3F71349782700CAC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C115A3F81349782700CAC129 /* Build configuration list for PBXNativeTarget "iShamela" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C115A3F91349782700CAC129 /* Debug */,
+				C115A3FA1349782700CAC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C115A3FB1349782700CAC129 /* Build configuration list for PBXNativeTarget "iShamelaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C115A3FC1349782700CAC129 /* Debug */,
+				C115A3FD1349782700CAC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C115A3B21349782500CAC129 /* Project object */;
+}

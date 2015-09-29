@@ -1,0 +1,21 @@
+//
+//  HomeViewController.h
+//  iShamela
+//
+//  Created by Suhendra Ahmad on 4/4/11.
+//  Copyright 2011 Aza Studios. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface HomeViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> { 
+    UISegmentedControl *segmentedCategoryView;
+    UITableView *aTableView;
+}
+
+@property (nonatomic, retain) IBOutlet UISegmentedControl *segmentedCategoryView;
+@property (nonatomic, retain) IBOutlet UITableView *aTableView;
+
+- (IBAction)categorySelectionChanged:(id)sender;
+
+@end

@@ -1,0 +1,33 @@
+//
+//  DbManager.h
+//  iShamela
+//
+//  Created by Suhendra Ahmad on 4/4/11.
+//  Copyright 2011 Aza Studios. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+
+@interface DbManager : NSObject {
+    NSMutableArray *books;
+}
+
+@property (nonatomic, retain) NSMutableArray *books;
+
+// Static Methods
++ (DbManager *)defaultManager;
++ (NSString *)getTempBookPath;
++ (NSString *)getUserDocumentPath;
++ (NSString *)getManifestsPath;
++ (NSString *)getUserDocumentPathWithFileName:(NSString *)filename;
+
+// File Management
++ (void)copyAttachedBook: (NSString *)filename;
++ (void)duplicateAttachedBooks;
++ (NSArray *)fetchAllBooks;
++ (NSArray *)fetchAllManifests;
+
+// Instance Methods
+
+@end
